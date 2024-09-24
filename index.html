@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Page</title>
+  <style>
+    body {
+      background-color: #f5e6e8;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .heart {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: relative;
+      transform: rotate(-45deg);
+      margin-bottom: 20px;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -100px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 100px;
+      top: 0;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    p {
+      color: #555;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart"></div>
+    <h1>Love is All Around</h1>
+    <p>Spread love and positivity everywhere you go.</p>
+  </div>
+</body>
+</html>
